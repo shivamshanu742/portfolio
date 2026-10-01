@@ -1,0 +1,1042 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shivam Shanu | Computer Science Student & Aspiring Software Developer</title>
+  <meta name="description" content="Official modern portfolio of Shivam Shanu - Computer Science Student (2nd Year, 3rd Sem) at Techno International New Town (Affiliated to MAKAUT) & Aspiring Software Developer." />
+  
+  <!-- Modern Fonts: Plus Jakarta Sans & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  
+  <!-- Font Awesome 6 Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+
+  <!-- Main Modern Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-theme="dark">
+
+  <!-- Ambient Background Glow Orbs -->
+  <div class="ambient-glow glow-1" aria-hidden="true"></div>
+  <div class="ambient-glow glow-2" aria-hidden="true"></div>
+  <div class="ambient-glow glow-3" aria-hidden="true"></div>
+
+  <!-- ================= FLOATING GLASS NAVBAR ================= -->
+  <header class="navbar-wrapper">
+    <nav class="navbar container">
+      <!-- Brand Logo -->
+      <a href="#home" class="brand-logo" aria-label="Shivam Shanu Home">
+        <div class="logo-badge">
+          <span>SS</span>
+          <div class="badge-ring"></div>
+        </div>
+        <div class="logo-text-group">
+          <span class="logo-name">Shivam Shanu</span>
+          <span class="logo-sub">Portfolio</span>
+        </div>
+      </a>
+
+      <!-- Navigation Links -->
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#achievements" class="nav-link">Achievements</a></li>
+        <li><a href="#resume" class="nav-link">Resume</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <!-- Action Items -->
+      <div class="nav-actions">
+        <!-- Theme Toggle -->
+        <button id="themeToggle" class="theme-toggle-btn" aria-label="Toggle Theme" title="Switch Theme">
+          <i class="fa-solid fa-sun icon-sun"></i>
+          <span class="toggle-pill"></span>
+          <i class="fa-solid fa-moon icon-moon"></i>
+        </button>
+
+        <!-- Hamburger Menu Button -->
+        <button id="hamburgerBtn" class="hamburger-btn" aria-label="Toggle Navigation Menu" title="Menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ================= MODERN SLIDE-OUT HAMBURGER DRAWER ================= -->
+  <div class="menu-drawer-backdrop" id="drawerBackdrop"></div>
+  <aside class="menu-drawer" id="menuDrawer" aria-label="Quick Navigation Drawer">
+    <div class="drawer-header">
+      <div class="brand-logo drawer-logo">
+        <div class="logo-badge">SS</div>
+        <div class="logo-text-group">
+          <span class="logo-name">Shivam Shanu</span>
+          <span class="logo-sub">Menu</span>
+        </div>
+      </div>
+      <button id="drawerCloseBtn" class="drawer-close-btn" aria-label="Close Navigation Drawer">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+
+    <!-- Drawer Navigation Links (All Sections) -->
+    <nav class="drawer-nav">
+      <ul class="drawer-links-list">
+        <li>
+          <a href="#home" class="drawer-link active">
+            <div class="d-link-icon"><i class="fa-solid fa-house"></i></div>
+            <div class="d-link-text">
+              <span class="d-title">Home</span>
+              <span class="d-desc">Welcome & Introduction</span>
+            </div>
+            <i class="fa-solid fa-chevron-right d-arrow"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#about" class="drawer-link">
+            <div class="d-link-icon"><i class="fa-solid fa-user"></i></div>
+            <div class="d-link-text">
+              <span class="d-title">About Me</span>
+              <span class="d-desc">Background & Journey</span>
+            </div>
+            <i class="fa-solid fa-chevron-right d-arrow"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#skills" class="drawer-link">
+            <div class="d-link-icon"><i class="fa-solid fa-code"></i></div>
+            <div class="d-link-text">
+              <span class="d-title">Skills & Tech Stack</span>
+              <span class="d-desc">Languages & Frameworks</span>
+            </div>
+            <i class="fa-solid fa-chevron-right d-arrow"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#projects" class="drawer-link">
+            <div class="d-link-icon"><i class="fa-solid fa-cubes"></i></div>
+            <div class="d-link-text">
+              <span class="d-title">Projects</span>
+              <span class="d-desc">Featured Portfolio Work</span>
+            </div>
+            <i class="fa-solid fa-chevron-right d-arrow"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#education" class="drawer-link">
+            <div class="d-link-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+            <div class="d-link-text">
+              <span class="d-title">Education</span>
+              <span class="d-desc">Academic Tree Roadmap</span>
+            </div>
+            <i class="fa-solid fa-chevron-right d-arrow"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#achievements" class="drawer-link">
+            <div class="d-link-icon"><i class="fa-solid fa-trophy"></i></div>
+            <div class="d-link-text">
+              <span class="d-title">Achievements</span>
+              <span class="d-desc">Esports & TEC Spartans</span>
+            </div>
+            <i class="fa-solid fa-chevron-right d-arrow"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#resume" class="drawer-link">
+            <div class="d-link-icon"><i class="fa-solid fa-file-lines"></i></div>
+            <div class="d-link-text">
+              <span class="d-title">Resume</span>
+              <span class="d-desc">Download & View PDF</span>
+            </div>
+            <i class="fa-solid fa-chevron-right d-arrow"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#contact" class="drawer-link">
+            <div class="d-link-icon"><i class="fa-solid fa-paper-plane"></i></div>
+            <div class="d-link-text">
+              <span class="d-title">Contact</span>
+              <span class="d-desc">Let's Connect & Collaborate</span>
+            </div>
+            <i class="fa-solid fa-chevron-right d-arrow"></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Drawer Footer Actions -->
+    <div class="drawer-footer">
+      <a href="assets/Shivam_Shanu_Resume.pdf" class="btn btn-glow-primary full-btn" download="Shivam_Shanu_Resume.pdf">
+        <i class="fa-solid fa-download"></i>
+        <span>Download Resume (PDF)</span>
+      </a>
+      <div class="drawer-socials">
+        <a href="tel:+917004353562" aria-label="Phone"><i class="fa-solid fa-phone"></i></a>
+        <a href="mailto:shivamshanu742@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+        <a href="https://www.linkedin.com/in/shivam-shanu-440327397" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://github.com/shivamshanu742" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.instagram.com/imshivamshanu?stkn=bzJjM3dwMWZteTR3" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ================= MAIN CONTENT CONTAINER ================= -->
+  <main class="main-content container">
+
+    <!-- 1. HERO SECTION (UPGRADED ULTRA-MODERN) -->
+    <section id="home" class="section-block hero-section">
+      <div class="hero-grid">
+        <!-- Left: Text details -->
+        <div class="hero-left">
+          <!-- Status Badge -->
+          <div class="status-pill">
+            <span class="pulse-indicator">
+              <span class="pulse-ring"></span>
+              <span class="pulse-core"></span>
+            </span>
+            <span>Available for Internships & Projects</span>
+          </div>
+
+          <h1 class="hero-title">
+            <span class="hero-greeting">Hi, I'm</span>
+            <span class="hero-name-gradient">Shivam Shanu</span>
+          </h1>
+
+          <!-- Typewriter Dynamic Role -->
+          <div class="hero-typewriter-wrapper">
+            <span class="typewriter-prefix">&gt; </span>
+            <span id="typewriter" class="typewriter-text">Computer Science Student | Aspiring Software Developer</span>
+            <span class="typewriter-cursor">|</span>
+          </div>
+
+          <p class="hero-bio">
+            Motivated and enthusiastic Computer Science student at Techno International New Town (affiliated to MAKAUT). Interested in software development, web technologies, and problem-solving. Seeking opportunities to strengthen technical knowledge through practical projects, internships, and real-world experience.
+          </p>
+
+          <!-- Quick Highlight Chips -->
+          <div class="hero-quick-chips">
+            <span class="quick-chip"><i class="fa-solid fa-location-dot"></i> Kolkata, West Bengal, India</span>
+            <span class="quick-chip"><i class="fa-solid fa-graduation-cap"></i> 2nd Year (3rd Sem) • CSE (IoT) • MAKAUT</span>
+            <span class="quick-chip"><i class="fa-solid fa-phone"></i> +91 7004353562</span>
+            <span class="quick-chip"><i class="fa-solid fa-code"></i> C • Python • Web Development</span>
+          </div>
+
+          <!-- Modern CTA Buttons -->
+          <div class="hero-cta-group">
+            <a href="assets/Shivam_Shanu_Resume.pdf" class="btn btn-glow-primary" download="Shivam_Shanu_Resume.pdf">
+              <i class="fa-solid fa-download"></i>
+              <span>Download Resume</span>
+              <div class="btn-shimmer"></div>
+            </a>
+            <a href="#contact" class="btn btn-glass-secondary">
+              <span>Let's Connect</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+
+          <!-- Social Links Dock -->
+          <div class="hero-social-dock">
+            <span class="dock-label">Connect:</span>
+            <div class="social-icons-group">
+              <a href="tel:+917004353562" class="social-icon-btn phone" aria-label="Phone" data-tooltip="Call +91 7004353562">
+                <i class="fa-solid fa-phone"></i>
+              </a>
+              <a href="mailto:shivamshanu742@gmail.com" class="social-icon-btn email" aria-label="Email" data-tooltip="shivamshanu742@gmail.com">
+                <i class="fa-solid fa-envelope"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/shivam-shanu-440327397" target="_blank" rel="noopener noreferrer" class="social-icon-btn linkedin" aria-label="LinkedIn" data-tooltip="LinkedIn">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+              <a href="https://github.com/shivamshanu742" target="_blank" rel="noopener noreferrer" class="social-icon-btn github" aria-label="GitHub" data-tooltip="GitHub">
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a href="https://www.instagram.com/imshivamshanu?stkn=bzJjM3dwMWZteTR3" target="_blank" rel="noopener noreferrer" class="social-icon-btn instagram" aria-label="Instagram" data-tooltip="Instagram">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Modern Developer Visual Showcase -->
+        <div class="hero-right">
+          <div class="hero-card-showcase">
+            <!-- Glowing Accent Background -->
+            <div class="showcase-glow-back"></div>
+
+            <!-- Artwork Container -->
+            <div class="showcase-art-frame">
+              <img src="assets/hero-image.png" alt="Shivam Shanu developer illustration" class="showcase-img" />
+              <div class="art-gradient-overlay"></div>
+
+              <!-- Floating Interactive Badges -->
+              <div class="floating-badge badge-top-right">
+                <div class="badge-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                <div class="badge-text">
+                  <span class="badge-title">CSE (IoT)</span>
+                  <span class="badge-sub">Undergraduate</span>
+                </div>
+              </div>
+
+              <div class="floating-badge badge-bottom-left">
+                <div class="badge-icon green"><i class="fa-solid fa-bolt"></i></div>
+                <div class="badge-text">
+                  <span class="badge-title">Active Builder</span>
+                  <span class="badge-sub">Clean Code</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. ABOUT ME SECTION (UPGRADED BENTO GRID) -->
+    <section id="about" class="section-block">
+      <div class="modern-card section-card">
+        <!-- Section Header -->
+        <div class="section-header-modern">
+          <div class="section-tag"><i class="fa-solid fa-user"></i> ABOUT ME</div>
+          <h2 class="section-heading-title">Engineering Mindset & Personal Journey</h2>
+          <p class="section-subtext">Blending computer science theory with practical, responsive web products</p>
+        </div>
+
+        <!-- Bento Grid Layout -->
+        <div class="about-bento-grid">
+          <!-- Main Narrative Card -->
+          <div class="bento-card bento-story">
+            <div class="bento-badge"><i class="fa-solid fa-terminal"></i> Career Objective</div>
+            <h3 class="bento-title">Motivated & Enthusiastic CS Student</h3>
+            <p class="bento-text">
+              I am an undergraduate Computer Science student currently pursuing studies at <strong>Techno International New Town, Kolkata</strong> (affiliated to <strong>MAKAUT</strong>) in <strong>2nd Year | 3rd Semester</strong>.
+            </p>
+            <p class="bento-text">
+              Deeply interested in software development, web technologies, and problem-solving. Seeking opportunities to strengthen technical knowledge through practical projects, internships, and real-world experience while continuously developing professional skills.
+            </p>
+            <div class="core-domains-list">
+              <span class="domain-tag"><i class="fa-solid fa-check"></i> Software Development</span>
+              <span class="domain-tag"><i class="fa-solid fa-check"></i> Web Technologies (HTML, CSS, JS)</span>
+              <span class="domain-tag"><i class="fa-solid fa-check"></i> Logic & Problem Solving</span>
+              <span class="domain-tag"><i class="fa-solid fa-check"></i> Emerging Technologies & IoT</span>
+            </div>
+          </div>
+
+          <!-- Metric Cards -->
+          <div class="bento-card bento-metric">
+            <div class="metric-top">
+              <i class="fa-regular fa-calendar-days metric-icon"></i>
+              <span class="metric-tag">Standing</span>
+            </div>
+            <div class="metric-number">2nd / 3rd</div>
+            <div class="metric-label">Year | Semester</div>
+          </div>
+
+          <div class="bento-card bento-metric highlight-metric">
+            <div class="metric-top">
+              <i class="fa-solid fa-bullseye metric-icon"></i>
+              <span class="metric-tag">Performance</span>
+            </div>
+            <div class="metric-number">6.29</div>
+            <div class="metric-label">Current CGPA</div>
+          </div>
+
+          <div class="bento-card bento-metric">
+            <div class="metric-top">
+              <i class="fa-solid fa-building-columns metric-icon"></i>
+              <span class="metric-tag">Affiliation</span>
+            </div>
+            <div class="metric-number" style="font-size: 1.55rem;">MAKAUT</div>
+            <div class="metric-label">Techno Int. New Town</div>
+          </div>
+
+          <div class="bento-card bento-metric">
+            <div class="metric-top">
+              <i class="fa-solid fa-microchip metric-icon"></i>
+              <span class="metric-tag">Discipline</span>
+            </div>
+            <div class="metric-number" style="font-size: 1.55rem;">CSE (IoT)</div>
+            <div class="metric-label">Undergraduate Degree</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. SKILLS SECTION (UPGRADED INTERACTIVE MATRIX) -->
+    <section id="skills" class="section-block">
+      <div class="modern-card section-card">
+        <div class="section-header-modern with-action">
+          <div>
+            <div class="section-tag"><i class="fa-solid fa-code"></i> TECH STACK</div>
+            <h2 class="section-heading-title">Technical Capabilities</h2>
+            <p class="section-subtext">Programming languages, web technologies, developer tools, and core CS concepts</p>
+          </div>
+          <div class="skill-category-tabs">
+            <button class="cat-tab active" data-filter="all">All</button>
+            <button class="cat-tab" data-filter="programming">Programming</button>
+            <button class="cat-tab" data-filter="frontend">Web Tech</button>
+            <button class="cat-tab" data-filter="tools">Tools & Core</button>
+          </div>
+        </div>
+
+        <div class="skills-modern-grid" id="skillsGrid">
+          <!-- C -->
+          <div class="modern-skill-card" data-category="programming">
+            <div class="skill-card-top">
+              <div class="skill-glyph icon-c">C</div>
+              <span class="skill-level-badge">Core</span>
+            </div>
+            <h3 class="skill-name">C Language</h3>
+            <p class="skill-desc">Memory management, pointers, and foundational algorithmic logic.</p>
+            <div class="skill-progress-bar">
+              <div class="bar-fill" style="width: 45%;"></div>
+              <span class="bar-pct">45%</span>
+            </div>
+          </div>
+
+
+          <!-- Python -->
+          <div class="modern-skill-card" data-category="programming">
+            <div class="skill-card-top">
+              <div class="skill-glyph icon-python"><i class="fa-brands fa-python"></i></div>
+              <span class="skill-level-badge">Scripting</span>
+            </div>
+            <h3 class="skill-name">Python</h3>
+            <p class="skill-desc">Logic building, CLI applications, data structures, and automation scripting.</p>
+            <div class="skill-progress-bar">
+              <div class="bar-fill" style="width: 40%;"></div>
+              <span class="bar-pct">40%</span>
+            </div>
+          </div>
+
+
+          <!-- HTML5 -->
+          <div class="modern-skill-card" data-category="frontend">
+            <div class="skill-card-top">
+              <div class="skill-glyph icon-html"><i class="fa-brands fa-html5"></i></div>
+              <span class="skill-level-badge">Frontend</span>
+            </div>
+            <h3 class="skill-name">HTML5 & Web Tech</h3>
+            <p class="skill-desc">Accessible semantic markup, SEO structure, and modern web standards.</p>
+            <div class="skill-progress-bar">
+              <div class="bar-fill" style="width: 50%;"></div>
+              <span class="bar-pct">50%</span>
+            </div>
+          </div>
+
+          <!-- CSS3 -->
+          <div class="modern-skill-card" data-category="frontend">
+            <div class="skill-card-top">
+              <div class="skill-glyph icon-css"><i class="fa-brands fa-css3-alt"></i></div>
+              <span class="skill-level-badge">Frontend</span>
+            </div>
+            <h3 class="skill-name">CSS3 & Layouts</h3>
+            <p class="skill-desc">Flexbox, CSS Grid, Glassmorphism, animations, and responsive breakpoints.</p>
+            <div class="skill-progress-bar">
+              <div class="bar-fill" style="width: 50%;"></div>
+              <span class="bar-pct">50%</span>
+            </div>
+          </div>
+
+          <!-- JavaScript -->
+          <div class="modern-skill-card" data-category="frontend">
+            <div class="skill-card-top">
+              <div class="skill-glyph icon-js"><i class="fa-brands fa-js"></i></div>
+              <span class="skill-level-badge">Frontend</span>
+            </div>
+            <h3 class="skill-name">JavaScript</h3>
+            <p class="skill-desc">DOM manipulation, event handling, dynamic UI state, and ES6+ features.</p>
+            <div class="skill-progress-bar">
+              <div class="bar-fill" style="width: 45%;"></div>
+              <span class="bar-pct">45%</span>
+            </div>
+          </div>
+
+          <!-- Tools: Git & GitHub -->
+          <div class="modern-skill-card" data-category="tools">
+            <div class="skill-card-top">
+              <div class="skill-glyph icon-git"><i class="fa-brands fa-git-alt"></i></div>
+              <span class="skill-level-badge">Tool</span>
+            </div>
+            <h3 class="skill-name">Git & GitHub</h3>
+            <p class="skill-desc">Version control, repository management, branch workflows, and team collaboration.</p>
+            <div class="skill-progress-bar">
+              <div class="bar-fill" style="width: 45%;"></div>
+              <span class="bar-pct">45%</span>
+            </div>
+          </div>
+
+          <!-- Tools: Visual Studio Code -->
+          <div class="modern-skill-card" data-category="tools">
+            <div class="skill-card-top">
+              <div class="skill-glyph icon-vscode"><i class="fa-solid fa-code"></i></div>
+              <span class="skill-level-badge">Editor</span>
+            </div>
+            <h3 class="skill-name">Visual Studio Code</h3>
+            <p class="skill-desc">Primary IDE, integrated debugging, extensions, and terminal environment.</p>
+            <div class="skill-progress-bar">
+              <div class="bar-fill" style="width: 60%;"></div>
+              <span class="bar-pct">60%</span>
+            </div>
+          </div>
+
+
+          <!-- Soft Skills -->
+          <div class="modern-skill-card" data-category="tools">
+            <div class="skill-card-top">
+              <div class="skill-glyph icon-soft"><i class="fa-solid fa-users"></i></div>
+              <span class="skill-level-badge">Soft Skills</span>
+            </div>
+            <h3 class="skill-name">Professional Skills</h3>
+            <p class="skill-desc">Communication, Teamwork, Leadership, and Problem Solving in collaborative teams.</p>
+            <div class="skill-progress-bar">
+              <div class="bar-fill" style="width: 70%;"></div>
+              <span class="bar-pct">70%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. PROJECTS SECTION (UPGRADED MODERN CARDS) -->
+    <section id="projects" class="section-block">
+      <div class="modern-card section-card">
+        <div class="section-header-modern with-action">
+          <div>
+            <div class="section-tag"><i class="fa-solid fa-cubes"></i> PORTFOLIO WORK</div>
+            <h2 class="section-heading-title">Featured Projects</h2>
+            <p class="section-subtext">Selected applications and projects I have engineered</p>
+          </div>
+          <a href="https://github.com/shivamshanu742" target="_blank" rel="noopener noreferrer" class="modern-link-btn">
+            <span>View All On GitHub</span>
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </a>
+        </div>
+
+        <div class="projects-modern-grid">
+          <!-- Project 1: Personal Portfolio Website -->
+          <div class="modern-project-card">
+            <div class="proj-media-window">
+              <div class="browser-bar">
+                <span class="b-dot red"></span>
+                <span class="b-dot yellow"></span>
+                <span class="b-dot green"></span>
+                <span class="browser-url">shivam.dev/portfolio</span>
+              </div>
+              <div class="proj-preview-stage">
+                <div class="stage-mesh"></div>
+                <div class="stage-device-mini">
+                  <div class="mini-dev-header"></div>
+                  <div class="mini-dev-body">
+                    <span class="dev-line l-blue"></span>
+                    <span class="dev-line l-purple"></span>
+                    <span class="dev-line l-cyan"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="proj-content-wrap">
+              <div class="proj-tags-row">
+                <span class="p-pill">HTML</span>
+                <span class="p-pill">CSS</span>
+                <span class="p-pill">JavaScript</span>
+              </div>
+              <h3 class="proj-heading">Personal Portfolio Website</h3>
+              <p class="proj-description">
+                Designed and developed a personal portfolio website to showcase academic background, skills, projects, and achievements. Created a responsive and modern user interface with interactive sections and animations.
+              </p>
+              <div class="proj-footer-actions">
+                <a href="#home" class="p-action-btn primary">
+                  <i class="fa-solid fa-eye"></i>
+                  <span>Live Preview</span>
+                </a>
+                <a href="https://github.com/shivamshanu742/portfolio" target="_blank" rel="noopener noreferrer" class="p-action-btn ghost">
+                  <i class="fa-brands fa-github"></i>
+                  <span>Code</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2: To-Do List Web App -->
+          <div class="modern-project-card">
+            <div class="proj-media-window">
+              <div class="browser-bar">
+                <span class="b-dot red"></span>
+                <span class="b-dot yellow"></span>
+                <span class="b-dot green"></span>
+                <span class="browser-url">tasks.app/shivam</span>
+              </div>
+              <div class="proj-preview-stage">
+                <div class="mini-todo-app-widget">
+                  <div class="todo-widget-top">
+                    <span>Task Manager</span>
+                    <i class="fa-solid fa-check-double text-blue"></i>
+                  </div>
+                  <div class="todo-checklist-mini">
+                    <div class="todo-row done"><i class="fa-solid fa-circle-check"></i> <span>Python Script</span></div>
+                    <div class="todo-row done"><i class="fa-solid fa-circle-check"></i> <span>Web Component</span></div>
+                    <div class="todo-row pending"><i class="fa-regular fa-circle"></i> <span>IoT Sensor Code</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="proj-content-wrap">
+              <div class="proj-tags-row">
+                <span class="p-pill">HTML5</span>
+                <span class="p-pill">CSS3</span>
+                <span class="p-pill">JavaScript</span>
+              </div>
+              <h3 class="proj-heading">To-Do List Web App</h3>
+              <p class="proj-description">
+                An intuitive task productivity app with dynamic list item manipulation, task filtering, and responsive styling.
+              </p>
+              <div class="proj-footer-actions">
+                <a href="#home" class="p-action-btn primary">
+                  <i class="fa-solid fa-eye"></i>
+                  <span>Live Preview</span>
+                </a>
+                <a href="https://github.com/shivamshanu742" target="_blank" rel="noopener noreferrer" class="p-action-btn ghost">
+                  <i class="fa-brands fa-github"></i>
+                  <span>Code</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3: Number Guessing Game -->
+          <div class="modern-project-card">
+            <div class="proj-media-window">
+              <div class="browser-bar">
+                <span class="b-dot red"></span>
+                <span class="b-dot yellow"></span>
+                <span class="b-dot green"></span>
+                <span class="browser-url">python-cli/guess</span>
+              </div>
+              <div class="proj-preview-stage">
+                <div class="mystery-neon-box">
+                  <div class="neon-q-glyph">?</div>
+                  <div class="neon-orbit-ring"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="proj-content-wrap">
+              <div class="proj-tags-row">
+                <span class="p-pill python">Python 3</span>
+                <span class="p-pill">CLI Game</span>
+              </div>
+              <h3 class="proj-heading">Number Guessing Game</h3>
+              <p class="proj-description">
+                A logic-based Python game with dynamic difficulty hints, score calculation, and user feedback mechanisms.
+              </p>
+              <div class="proj-footer-actions">
+                <a href="https://github.com/shivamshanu742" target="_blank" rel="noopener noreferrer" class="p-action-btn ghost full-width">
+                  <i class="fa-brands fa-github"></i>
+                  <span>View Repository</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. EDUCATION SECTION (REFINED TREE ROADMAP) -->
+    <section id="education" class="section-block">
+      <div class="modern-card section-card">
+        <div class="section-header-modern">
+          <div class="section-tag"><i class="fa-solid fa-graduation-cap"></i> EDUCATION JOURNEY</div>
+          <h2 class="section-heading-title">Academic Tree Roadmap</h2>
+          <p class="section-subtext">My academic qualifications, schoolings, and degree milestones</p>
+        </div>
+
+        <!-- Tree Structure for Education -->
+        <div class="education-tree">
+          <!-- Central Trunk Line -->
+          <div class="tree-trunk"></div>
+
+          <!-- Tree Crown / Top Header -->
+          <div class="tree-crown">
+            <span class="crown-badge">
+              <i class="fa-solid fa-graduation-cap"></i>
+              <span>Higher Horizons</span>
+            </span>
+          </div>
+
+          <!-- Branch 1: B.Tech (Undergraduate) - Right side -->
+          <div class="tree-branch-node branch-right">
+            <div class="tree-joint">
+              <div class="joint-circle">
+                <i class="fa-solid fa-graduation-cap"></i>
+              </div>
+              <div class="joint-connector"></div>
+            </div>
+            <div class="tree-leaf-card">
+              <div class="leaf-header">
+                <span class="leaf-tag tag-present">Undergraduate • In Progress</span>
+                <span class="leaf-time"><i class="fa-regular fa-calendar"></i> 2nd Year | 3rd Semester</span>
+              </div>
+              <h3 class="leaf-title">B.Tech in Computer Science & Engineering (IoT)</h3>
+              <p class="leaf-institute"><i class="fa-solid fa-building-columns"></i> Techno International New Town, Kolkata</p>
+              <div class="leaf-meta-row">
+                <span class="leaf-pill"><i class="fa-solid fa-graduation-cap"></i> Undergraduate Degree</span>
+                <span class="leaf-pill"><i class="fa-solid fa-award"></i> CGPA: <strong>6.29</strong></span>
+                <span class="leaf-pill"><i class="fa-solid fa-layer-group"></i> 2nd Year | 3rd Semester</span>
+                <span class="leaf-pill"><i class="fa-solid fa-certificate"></i> Affiliated to MAKAUT</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Branch 2: 12th Higher Secondary - Left side -->
+          <div class="tree-branch-node branch-left">
+            <div class="tree-joint">
+              <div class="joint-circle">
+                <i class="fa-solid fa-school"></i>
+              </div>
+              <div class="joint-connector"></div>
+            </div>
+            <div class="tree-leaf-card">
+              <div class="leaf-header">
+                <span class="leaf-tag tag-completed">Higher Secondary (12th)</span>
+                <span class="leaf-time"><i class="fa-regular fa-calendar-check"></i> Passed: 2022</span>
+              </div>
+              <h3 class="leaf-title">Higher Secondary Examination (12th)</h3>
+              <p class="leaf-institute"><i class="fa-solid fa-landmark"></i> SLM 10+2 High School, Jorla</p>
+              <div class="leaf-meta-row">
+                <span class="leaf-pill score-pill"><i class="fa-solid fa-star"></i> Aggregate: <strong>79.8%</strong></span>
+                <span class="leaf-pill"><i class="fa-solid fa-atom"></i> Science & Mathematics</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Branch 3: 10th Secondary - Right side -->
+          <div class="tree-branch-node branch-right">
+            <div class="tree-joint">
+              <div class="joint-circle">
+                <i class="fa-solid fa-book-open-reader"></i>
+              </div>
+              <div class="joint-connector"></div>
+            </div>
+            <div class="tree-leaf-card">
+              <div class="leaf-header">
+                <span class="leaf-tag tag-completed">Secondary (10th)</span>
+                <span class="leaf-time"><i class="fa-regular fa-calendar-check"></i> Passed: 2020</span>
+              </div>
+              <h3 class="leaf-title">Secondary School Examination (10th)</h3>
+              <p class="leaf-institute"><i class="fa-solid fa-landmark"></i> SLM 10+2 High School, Jorla</p>
+              <div class="leaf-meta-row">
+                <span class="leaf-pill score-pill"><i class="fa-solid fa-star"></i> Aggregate: <strong>76.1%</strong></span>
+                <span class="leaf-pill"><i class="fa-solid fa-shapes"></i> General Science & Math</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Root Base Marker -->
+          <div class="tree-root-base">
+            <div class="root-marker">
+              <i class="fa-solid fa-seedling"></i>
+              <span>Roots & Foundations of Education</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. ACHIEVEMENTS & EXTRACURRICULAR SECTION -->
+    <section id="achievements" class="section-block">
+      <div class="modern-card section-card">
+        <div class="section-header-modern">
+          <div class="section-tag"><i class="fa-solid fa-trophy"></i> ACHIEVEMENTS & ACTIVITIES</div>
+          <h2 class="section-heading-title">Achievements & Extracurricular Activities</h2>
+          <p class="section-subtext">Event volunteering, community support, team coordination, and technical participation</p>
+        </div>
+
+        <!-- Clean, Normal Achievements Card -->
+        <div class="normal-achieve-card">
+          <div class="normal-achieve-header">
+            <div class="club-badge-icon">
+              <i class="fa-solid fa-gamepad"></i>
+            </div>
+            <div>
+              <h3 class="club-title">TEC Spartans & College Activities</h3>
+              <span class="club-subtitle">Event Volunteer • Esports & Gaming Community Support</span>
+            </div>
+          </div>
+
+          <p class="normal-achieve-text">
+            Active participant in college-level activities and collaborative team-based initiatives, dedicated to community coordination, tournament support, and event execution.
+          </p>
+
+          <ul class="achieve-bullets-list" style="list-style: none; padding: 0; margin-bottom: 24px; display: flex; flex-direction: column; gap: 12px;">
+            <li style="display: flex; align-items: flex-start; gap: 10px; font-size: 0.96rem; color: var(--text-muted); line-height: 1.5;">
+              <i class="fa-solid fa-circle-check" style="color: #10b981; margin-top: 4px; flex-shrink: 0;"></i>
+              <span><strong>TEC Spartans – Event Volunteer:</strong> Assisted with event coordination, team support, and on-ground activities during campus and community events.</span>
+            </li>
+            <li style="display: flex; align-items: flex-start; gap: 10px; font-size: 0.96rem; color: var(--text-muted); line-height: 1.5;">
+              <i class="fa-solid fa-circle-check" style="color: #10b981; margin-top: 4px; flex-shrink: 0;"></i>
+              <span><strong>Esports & Gaming Management:</strong> Actively interested in esports event management, player coordination, and gaming community initiatives.</span>
+            </li>
+            <li style="display: flex; align-items: flex-start; gap: 10px; font-size: 0.96rem; color: var(--text-muted); line-height: 1.5;">
+              <i class="fa-solid fa-circle-check" style="color: #10b981; margin-top: 4px; flex-shrink: 0;"></i>
+              <span><strong>Technical & College Activities:</strong> Participated in technical and college activities, fostering collaborative team culture and problem solving.</span>
+            </li>
+          </ul>
+
+          <div class="normal-skills-wrap">
+            <span class="normal-skill-heading"><i class="fa-solid fa-circle-check text-green"></i> Key Core Strengths:</span>
+            <div class="normal-pills-list">
+              <span class="normal-pill">Communication</span>
+              <span class="normal-pill">Teamwork</span>
+              <span class="normal-pill">Leadership</span>
+              <span class="normal-pill">Problem Solving</span>
+              <span class="normal-pill">Event Coordination</span>
+              <span class="normal-pill">Team Support</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- 7. RESUME & CREDENTIALS SECTION -->
+    <section id="resume" class="section-block">
+      <div class="modern-card section-card">
+        <div class="section-header-modern">
+          <div class="section-tag"><i class="fa-solid fa-file-pdf"></i> CURRICULUM VITAE</div>
+          <h2 class="section-heading-title">Resume & Academic Credentials</h2>
+          <p class="section-subtext">Verified educational background, technical foundation, and official PDF documents.</p>
+        </div>
+
+        <div class="resume-card-modern">
+          <!-- Left Side: Profile Summary & Highlights -->
+          <div class="resume-meta-panel">
+            <div class="resume-candidate-badge">
+              <div class="resume-avatar-ring">
+                <i class="fa-solid fa-graduation-cap"></i>
+              </div>
+              <div>
+                <h3 class="resume-candidate-name">Shivam Shanu</h3>
+                <p class="resume-candidate-sub">B.Tech in Computer Science & Engineering (IoT)</p>
+                <span class="resume-college-label"><i class="fa-solid fa-landmark"></i> Techno International New Town (MAKAUT)</span>
+              </div>
+            </div>
+
+            <!-- Academic Highlights -->
+            <div class="resume-highlights-grid">
+              <div class="resume-stat-box">
+                <span class="stat-box-val">6.29</span>
+                <span class="stat-box-label">B.Tech CGPA (3rd Sem)</span>
+              </div>
+              <div class="resume-stat-box">
+                <span class="stat-box-val">79.8%</span>
+                <span class="stat-box-label">Higher Secondary (12th)</span>
+              </div>
+              <div class="resume-stat-box">
+                <span class="stat-box-val">76.1%</span>
+                <span class="stat-box-label">Secondary (10th)</span>
+              </div>
+            </div>
+
+            <!-- Core Tech Summary Chips -->
+            <div class="resume-tech-pills">
+              <span class="res-pill"><i class="fa-solid fa-code"></i> C Language</span>
+              <span class="res-pill"><i class="fa-brands fa-python"></i> Python</span>
+              <span class="res-pill"><i class="fa-brands fa-html5"></i> HTML5</span>
+              <span class="res-pill"><i class="fa-brands fa-css3-alt"></i> CSS3</span>
+              <span class="res-pill"><i class="fa-brands fa-js"></i> JavaScript</span>
+              <span class="res-pill"><i class="fa-brands fa-git-alt"></i> Git & GitHub</span>
+              <span class="res-pill"><i class="fa-solid fa-laptop-code"></i> VS Code</span>
+            </div>
+          </div>
+
+          <!-- Right Side: Official Actions -->
+          <div class="resume-actions-panel">
+            <div class="pdf-doc-badge">
+              <div class="pdf-icon-wrap">
+                <i class="fa-solid fa-file-pdf"></i>
+              </div>
+              <div class="pdf-info-wrap">
+                <span class="pdf-file-title">Shivam_Shanu_Resume.pdf</span>
+                <span class="pdf-file-meta"><i class="fa-solid fa-circle-check"></i> Verified PDF Document • 34 KB</span>
+              </div>
+            </div>
+
+            <p class="resume-actions-desc">
+              Download or preview my verified resume containing my academic credentials, coursework, projects, and contact channels.
+            </p>
+
+            <div class="resume-cta-buttons">
+              <a href="assets/Shivam_Shanu_Resume.pdf" class="btn btn-glow-primary full-width-mobile" download="Shivam_Shanu_Resume.pdf">
+                <i class="fa-solid fa-download"></i>
+                <span>Download Resume (PDF)</span>
+              </a>
+              <a href="assets/Shivam_Shanu_Resume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-glass-secondary full-width-mobile">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                <span>View Online (New Tab)</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- 8. LET'S CONNECT (MODERN INTERACTIVE SECTION WITH DIRECT FORM) -->
+    <section id="contact" class="section-block">
+      <div class="modern-card section-card">
+        <div class="section-header-modern">
+          <div class="section-tag"><i class="fa-solid fa-paper-plane"></i> GET IN TOUCH</div>
+          <h2 class="section-heading-title">Let's Connect & Collaborate</h2>
+          <p class="section-subtext">Have a project, internship opportunity, or question? Feel free to reach out directly!</p>
+        </div>
+
+        <div class="contact-modern-grid">
+          <!-- Left: Contact Channels -->
+          <div class="contact-channels-column">
+            <div class="channel-card">
+              <div class="ch-icon"><i class="fa-solid fa-location-dot"></i></div>
+              <div>
+                <span class="ch-label">Location</span>
+                <span class="ch-val">Kolkata, West Bengal, India</span>
+              </div>
+            </div>
+
+            <a href="tel:+917004353562" class="channel-card hoverable">
+              <div class="ch-icon phone"><i class="fa-solid fa-phone"></i></div>
+              <div>
+                <span class="ch-label">Phone</span>
+                <span class="ch-val">+91 7004353562</span>
+              </div>
+              <i class="fa-solid fa-arrow-right ch-arrow"></i>
+            </a>
+
+            <a href="mailto:shivamshanu742@gmail.com" class="channel-card hoverable">
+              <div class="ch-icon email"><i class="fa-solid fa-envelope"></i></div>
+              <div>
+                <span class="ch-label">Email Address</span>
+                <span class="ch-val">shivamshanu742@gmail.com</span>
+              </div>
+              <i class="fa-solid fa-arrow-right ch-arrow"></i>
+            </a>
+
+            <a href="https://www.linkedin.com/in/shivam-shanu-440327397" target="_blank" rel="noopener noreferrer" class="channel-card hoverable">
+              <div class="ch-icon linkedin"><i class="fa-brands fa-linkedin-in"></i></div>
+              <div>
+                <span class="ch-label">LinkedIn Profile</span>
+                <span class="ch-val">linkedin.com/in/shivam-shanu</span>
+              </div>
+              <i class="fa-solid fa-arrow-right ch-arrow"></i>
+            </a>
+
+            <a href="https://github.com/shivamshanu742" target="_blank" rel="noopener noreferrer" class="channel-card hoverable">
+              <div class="ch-icon github"><i class="fa-brands fa-github"></i></div>
+              <div>
+                <span class="ch-label">GitHub Workspace</span>
+                <span class="ch-val">github.com/shivamshanu742</span>
+              </div>
+              <i class="fa-solid fa-arrow-right ch-arrow"></i>
+            </a>
+
+            <a href="https://www.instagram.com/imshivamshanu?stkn=bzJjM3dwMWZteTR3" target="_blank" rel="noopener noreferrer" class="channel-card hoverable">
+              <div class="ch-icon instagram"><i class="fa-brands fa-instagram"></i></div>
+              <div>
+                <span class="ch-label">Instagram Handle</span>
+                <span class="ch-val">@imshivamshanu</span>
+              </div>
+              <i class="fa-solid fa-arrow-right ch-arrow"></i>
+            </a>
+          </div>
+
+          <!-- Right: Interactive Quick Message Form -->
+          <div class="contact-form-column">
+            <form id="contactForm" class="modern-contact-form">
+              <h3 class="form-title">Send a Quick Message</h3>
+              
+              <div class="form-group">
+                <label for="nameInput">Your Name</label>
+                <div class="input-wrap">
+                  <i class="fa-regular fa-user"></i>
+                  <input type="text" id="nameInput" placeholder="e.g. John Doe" required />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="emailInput">Your Email</label>
+                <div class="input-wrap">
+                  <i class="fa-regular fa-envelope"></i>
+                  <input type="email" id="emailInput" placeholder="name@domain.com" required />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="messageInput">Message</label>
+                <div class="input-wrap textarea-wrap">
+                  <i class="fa-regular fa-message"></i>
+                  <textarea id="messageInput" rows="4" placeholder="Hello Shivam, I would love to connect..." required></textarea>
+                </div>
+              </div>
+
+              <button type="submit" id="submitBtn" class="btn btn-glow-primary full-btn">
+                <span>Send Message</span>
+                <i class="fa-solid fa-paper-plane"></i>
+              </button>
+
+              <div id="formFeedback" class="form-feedback-message"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer-wrapper">
+    <div class="container footer-content">
+      <div class="footer-brand-row">
+        <div class="brand-logo footer-logo">
+          <div class="logo-badge">SS</div>
+          <span class="logo-name">Shivam Shanu</span>
+        </div>
+        <p class="footer-tagline">Crafting modern, responsive web experiences & exploring IoT architectures.</p>
+      </div>
+      <!-- Footer Social Media Dock -->
+      <div class="footer-social-row">
+        <a href="tel:+917004353562" class="social-icon-btn phone" aria-label="Phone" title="Call +91 7004353562"><i class="fa-solid fa-phone"></i></a>
+        <a href="mailto:shivamshanu742@gmail.com" class="social-icon-btn email" aria-label="Email" title="Email"><i class="fa-solid fa-envelope"></i></a>
+        <a href="https://www.linkedin.com/in/shivam-shanu-440327397" target="_blank" rel="noopener noreferrer" class="social-icon-btn linkedin" aria-label="LinkedIn" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://github.com/shivamshanu742" target="_blank" rel="noopener noreferrer" class="social-icon-btn github" aria-label="GitHub" title="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.instagram.com/imshivamshanu?stkn=bzJjM3dwMWZteTR3" target="_blank" rel="noopener noreferrer" class="social-icon-btn instagram" aria-label="Instagram" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+
+      <div class="footer-bottom-line">
+        <p class="footer-copy">&copy; 2026 Shivam Shanu. All rights reserved.</p>
+        <div class="footer-links">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#education">Education</a>
+          <a href="#resume">Resume</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Back-to-Top Button -->
+  <button id="backToTopBtn" class="back-to-top-btn" aria-label="Back to Top" title="Back to Top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- Modern Interactive JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
