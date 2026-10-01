@@ -386,13 +386,17 @@ body[data-theme="light"] .menu-drawer-backdrop {
   display: flex;
   flex-direction: column;
   transform: translateX(100%);
-  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  visibility: hidden;
+  pointer-events: none;
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.35s ease;
   overflow-y: auto;
   overscroll-behavior: contain;
 }
 
 .menu-drawer.open {
   transform: translateX(0);
+  visibility: visible;
+  pointer-events: auto;
 }
 
 body[data-theme="light"] .menu-drawer {
@@ -677,6 +681,7 @@ body[data-theme="light"] .drawer-footer {
 .hero-name-gradient {
   background: var(--grad-name);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   display: inline-block;
 }
@@ -2598,24 +2603,133 @@ body[data-theme="light"] .social-icon-btn.github {
     display: none !important;
   }
 
-  body {
+  html, body {
+    overflow-x: hidden !important;
+    max-width: 100vw !important;
+    width: 100% !important;
     -webkit-overflow-scrolling: touch;
   }
 
+  /* Compact container padding to prevent blowout */
+  .container {
+    padding-left: 14px !important;
+    padding-right: 14px !important;
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+
+  .main-content {
+    gap: 28px !important;
+    padding-bottom: 50px !important;
+  }
+
+  .section-block {
+    scroll-margin-top: 76px !important;
+  }
+
   .navbar {
-    height: 66px;
+    height: 62px !important;
+  }
+
+  .navbar .container {
+    padding-left: 12px !important;
+    padding-right: 12px !important;
+  }
+
+  .brand-logo {
+    gap: 8px !important;
+  }
+
+  .logo-badge {
+    width: 36px !important;
+    height: 36px !important;
+    font-size: 1rem !important;
+  }
+
+  .logo-name {
+    font-size: 0.98rem !important;
+  }
+
+  .logo-sub {
+    font-size: 0.64rem !important;
   }
 
   .hamburger-btn {
     display: flex;
+    width: 38px !important;
+    height: 38px !important;
+    font-size: 1rem !important;
+  }
+
+  .theme-toggle-btn {
+    width: 38px !important;
+    height: 38px !important;
+    font-size: 0.95rem !important;
   }
 
   .nav-menu {
     display: none;
   }
 
+  /* Section Headers Proportionate Scaling */
+  .section-header-modern {
+    margin-bottom: 22px !important;
+  }
+
+  .section-tag {
+    font-size: 0.7rem !important;
+    padding: 3px 10px !important;
+    margin-bottom: 6px !important;
+  }
+
+  .section-heading-title {
+    font-size: 1.45rem !important;
+    letter-spacing: -0.5px !important;
+    line-height: 1.25 !important;
+    margin-bottom: 6px !important;
+  }
+
+  .section-subtext {
+    font-size: 0.85rem !important;
+    line-height: 1.45 !important;
+  }
+
+  /* Cards Proportionate Padding */
+  .modern-card {
+    padding: 18px 14px !important;
+    border-radius: 16px !important;
+  }
+
+  /* Hero Section */
+  .hero-section {
+    padding-top: 24px !important;
+    padding-bottom: 16px !important;
+  }
+
+  .status-pill {
+    font-size: 0.74rem !important;
+    padding: 4px 12px !important;
+    margin-bottom: 12px !important;
+  }
+
   .hero-title {
-    font-size: 2.6rem;
+    font-size: 2.1rem !important;
+    line-height: 1.2 !important;
+  }
+
+  .hero-greeting {
+    font-size: 1.25rem !important;
+  }
+
+  .hero-typewriter-wrapper {
+    font-size: 0.95rem !important;
+    margin-bottom: 14px !important;
+  }
+
+  .hero-bio {
+    font-size: 0.88rem !important;
+    line-height: 1.55 !important;
+    margin-bottom: 20px !important;
   }
 
   .hero-card-showcase {
@@ -2624,68 +2738,352 @@ body[data-theme="light"] .social-icon-btn.github {
   }
 
   .showcase-art-frame img {
-    max-width: 260px;
+    max-width: 210px !important;
     width: 100%;
     height: auto;
     margin: 0 auto;
     display: block;
   }
 
-  .modern-card {
-    padding: 24px;
+  .floating-badge {
+    padding: 6px 10px !important;
+    font-size: 0.76rem !important;
   }
 
+  .badge-icon {
+    width: 26px !important;
+    height: 26px !important;
+    font-size: 0.8rem !important;
+  }
+
+  .badge-title {
+    font-size: 0.78rem !important;
+  }
+
+  .badge-sub {
+    font-size: 0.65rem !important;
+  }
+
+  /* Bento Grid */
   .about-bento-grid {
     grid-template-columns: 1fr;
+    gap: 14px !important;
   }
 
   .bento-story {
     grid-column: 1 / 2;
   }
 
+  .bento-card {
+    padding: 18px 14px !important;
+  }
+
+  .bento-title {
+    font-size: 1.15rem !important;
+  }
+
+  .bento-text {
+    font-size: 0.86rem !important;
+    line-height: 1.55 !important;
+  }
+
+  .metric-number {
+    font-size: 1.6rem !important;
+  }
+
+  .metric-number.metric-degree {
+    font-size: 1.3rem !important;
+  }
+
+  /* Skills Section */
+  .skill-category-tabs {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 6px !important;
+    margin-top: 10px !important;
+  }
+
+  .cat-tab {
+    padding: 5px 12px !important;
+    font-size: 0.78rem !important;
+  }
+
   .skills-modern-grid {
     grid-template-columns: 1fr;
+    gap: 12px !important;
   }
 
+  .modern-skill-card {
+    padding: 14px 12px !important;
+  }
+
+  .skill-glyph {
+    width: 36px !important;
+    height: 36px !important;
+    font-size: 1.1rem !important;
+  }
+
+  .skill-name {
+    font-size: 0.95rem !important;
+  }
+
+  .skill-desc {
+    font-size: 0.8rem !important;
+    margin-bottom: 10px !important;
+  }
+
+  /* Projects Section */
   .projects-modern-grid {
     grid-template-columns: 1fr;
+    gap: 16px !important;
   }
 
+  .modern-project-card {
+    border-radius: 14px !important;
+  }
+
+  .proj-preview-stage {
+    height: 110px !important;
+  }
+
+  .proj-content {
+    padding: 16px 14px !important;
+  }
+
+  .proj-heading {
+    font-size: 1.08rem !important;
+  }
+
+  .proj-desc {
+    font-size: 0.83rem !important;
+  }
+
+  .p-tag {
+    font-size: 0.7rem !important;
+    padding: 3px 8px !important;
+  }
+
+  /* Achievements Section */
   .achieve-cards-grid {
     grid-template-columns: 1fr;
+    gap: 14px !important;
   }
 
+  .normal-achieve-card {
+    padding: 18px 14px !important;
+  }
+
+  .club-logo-circle {
+    width: 44px !important;
+    height: 44px !important;
+    font-size: 1.25rem !important;
+  }
+
+  .club-title {
+    font-size: 1.15rem !important;
+  }
+
+  .normal-achieve-text {
+    font-size: 0.88rem !important;
+    line-height: 1.55 !important;
+    margin-bottom: 16px !important;
+  }
+
+  .achieve-bullets-list {
+    margin-bottom: 16px !important;
+    gap: 10px !important;
+  }
+
+  .achieve-bullet-item {
+    font-size: 0.83rem !important;
+    gap: 8px !important;
+    line-height: 1.45 !important;
+  }
+
+  .normal-pill {
+    font-size: 0.76rem !important;
+    padding: 5px 12px !important;
+  }
+
+  /* Resume Section Mobile Tuning */
   .resume-card-modern {
     grid-template-columns: 1fr;
-    gap: 20px;
+    gap: 18px !important;
+  }
+
+  .resume-meta-panel {
+    gap: 14px !important;
+  }
+
+  .resume-avatar-ring {
+    width: 42px !important;
+    height: 42px !important;
+    font-size: 1.15rem !important;
+  }
+
+  .resume-candidate-name {
+    font-size: 1.15rem !important;
+  }
+
+  .resume-candidate-sub {
+    font-size: 0.82rem !important;
+  }
+
+  .resume-highlights-grid {
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 6px !important;
+  }
+
+  .resume-stat-box {
+    padding: 8px 8px !important;
+  }
+
+  .stat-box-val {
+    font-size: 1.05rem !important;
+  }
+
+  .stat-box-label {
+    font-size: 0.66rem !important;
+  }
+
+  .res-pill {
+    font-size: 0.72rem !important;
+    padding: 4px 9px !important;
+  }
+
+  .resume-actions-panel {
+    padding: 16px 14px !important;
+    gap: 12px !important;
+  }
+
+  .pdf-file-title {
+    font-size: 0.86rem !important;
+  }
+
+  .pdf-file-meta {
+    font-size: 0.72rem !important;
+  }
+
+  .resume-actions-desc {
+    font-size: 0.82rem !important;
+    line-height: 1.45 !important;
+  }
+
+  /* CONTACT SECTION PERFECT MOBILE SIZING & FIT */
+  .contact-modern-grid {
+    grid-template-columns: 1fr !important;
+    gap: 16px !important;
+  }
+
+  .contact-channels-column {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 10px !important;
+    width: 100% !important;
+    min-width: 0 !important;
   }
 
   .channel-card {
-    padding: 14px 16px;
+    padding: 10px 12px !important;
+    gap: 10px !important;
+    border-radius: 12px !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+    min-width: 0 !important;
   }
 
+  .ch-icon {
+    width: 36px !important;
+    height: 36px !important;
+    font-size: 1rem !important;
+    border-radius: 10px !important;
+    flex-shrink: 0 !important;
+  }
+
+  .ch-label {
+    font-size: 0.66rem !important;
+    margin-bottom: 2px !important;
+  }
+
+  .ch-val {
+    font-size: 0.82rem !important;
+    line-height: 1.35 !important;
+    word-break: break-all !important;
+    overflow-wrap: anywhere !important;
+  }
+
+  .ch-arrow {
+    font-size: 0.75rem !important;
+    flex-shrink: 0 !important;
+  }
+
+  .contact-form-column {
+    width: 100% !important;
+    min-width: 0 !important;
+  }
+
+  .contact-form-column .modern-contact-form {
+    padding: 16px 12px !important;
+    border-radius: 14px !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  .form-title {
+    font-size: 1.05rem !important;
+    margin-bottom: 12px !important;
+  }
+
+  .form-group {
+    margin-bottom: 10px !important;
+  }
+
+  .form-group label {
+    font-size: 0.76rem !important;
+    margin-bottom: 4px !important;
+  }
+
+  .input-wrap input,
+  .input-wrap textarea {
+    padding: 9px 12px 9px 34px !important;
+    font-size: 15px !important;
+  }
+
+  .input-wrap i {
+    left: 11px !important;
+    font-size: 0.85rem !important;
+  }
+
+  .full-btn {
+    padding: 10px 16px !important;
+    font-size: 0.88rem !important;
+  }
+
+  /* Footer */
   .footer-brand-row,
   .footer-bottom-line {
     flex-direction: column;
     text-align: center;
-    gap: 16px;
+    gap: 14px;
   }
 
   .footer-links {
     justify-content: center;
     flex-wrap: wrap;
-    gap: 12px 18px;
+    gap: 10px 16px;
   }
 }
 
 @media (max-width: 480px) {
   .container {
-    padding-left: 14px !important;
-    padding-right: 14px !important;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
   }
 
   .hero-title {
-    font-size: 2.1rem;
+    font-size: 1.85rem !important;
   }
 
   .hero-cta-group {
@@ -2703,44 +3101,40 @@ body[data-theme="light"] .social-icon-btn.github {
     max-width: 100%;
   }
 
-  .normal-achieve-card {
-    padding: 20px 14px;
-  }
-
   .modern-card {
-    padding: 18px 14px !important;
+    padding: 15px 10px !important;
   }
 
   .resume-highlights-grid {
     grid-template-columns: 1fr !important;
-    gap: 8px !important;
+    gap: 6px !important;
   }
 
   .resume-actions-panel {
-    padding: 20px 16px !important;
+    padding: 14px 10px !important;
   }
 
   .tree-trunk {
-    left: 18px !important;
+    left: 16px !important;
   }
 
   .tree-branch-node.branch-left,
   .tree-branch-node.branch-right {
-    padding-left: 46px !important;
+    padding-left: 42px !important;
   }
 
   .tree-branch-node.branch-left .tree-joint,
   .tree-branch-node.branch-right .tree-joint {
-    left: -38px !important;
+    left: -36px !important;
   }
 
   .tree-branch-node.branch-left .joint-connector,
   .tree-branch-node.branch-right .joint-connector {
-    width: 16px !important;
+    width: 14px !important;
   }
 
   .tree-leaf-card {
-    padding: 16px 12px !important;
+    padding: 14px 10px !important;
   }
 
   .full-width-mobile {
@@ -2749,7 +3143,7 @@ body[data-theme="light"] .social-icon-btn.github {
   }
 
   .contact-form-column .modern-contact-form {
-    padding: 18px 14px !important;
+    padding: 14px 10px !important;
   }
 }
 
