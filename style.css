@@ -1328,6 +1328,39 @@ body[data-theme="light"] .social-icon-btn.github {
   flex-grow: 1;
 }
 
+.metric-degree {
+  font-size: 1.55rem;
+}
+.w-40 { width: 40%; flex-grow: 0; }
+.w-45 { width: 45%; flex-grow: 0; }
+.w-50 { width: 50%; flex-grow: 0; }
+.w-60 { width: 60%; flex-grow: 0; }
+.w-70 { width: 70%; flex-grow: 0; }
+
+.achieve-bullets-list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.achieve-bullet-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 0.96rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+.achieve-bullet-icon {
+  color: #10b981;
+  margin-top: 4px;
+  flex-shrink: 0;
+}
+
 .bar-pct {
   font-size: 0.78rem;
   font-weight: 700;
